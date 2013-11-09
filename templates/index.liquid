@@ -1,0 +1,108 @@
+{% block content %}
+<section role="main">
+  <nav class="top-bar hide-for-small">
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1><a href="http://zurb.com/ink" class="home" title="Ink">Ink</a></h1>
+    </li> 
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><a href="http://zurb.com/ink/process.php">Ink Process</a></li>
+      <li><a href="http://zurb.com/ink/docs.php">Ink Docs</a></li>
+      <li><a href="http://docs.mixture.io">Mixture Docs</a></li>
+    </ul>
+  </section>
+</nav>
+  <section class="top-area">
+    <div class="row">
+      <div class="large-12 columns">
+        <a class='sidebar-button show-for-small' id="sidebarButton" href="#sidebar"><img alt="Menu-wht" src="{{ "menu-wht.png" | asset_url }}" /><h4>Ink</h4></a>
+        <h2 class="hide-for-small">Email Templates</h2>
+      </div>
+    </div>
+  </section>
+  <div class="row top-headlines">
+    <div class="large-12 columns">
+      <h1 class="light text-center">Responsive email templates built on Ink</h1>
+      <p class="lead text-center">Example emails to see Ink in action</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-8 columns">
+      <div class="how-to-use-templates">
+        <h3 class="light">How to use our email templates</h3>
+        <br>
+        <p>Each template is a single HTML email built using Ink. You can view them and inspect the code to see how they were implemented, Any changes and Mixture will automatically display live. Each template already has Ink included in a style tag at the top of the file.</p>
+        <br><br><br><br>
+        <div class="inky-small"><img src="{{ "inky-template.svg" | asset_url }}"/></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns"><hr></div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h5 class="normal">You can view all of the templates below:</h6>
+      <br><br>
+      <ul class="large-block-grid-3 small-block-grid-1 template-thumbs">
+        <li>
+          <a href="/basic"><img src="{{ "basic.jpg" | asset_url }}"></a>
+          <h6 class="name"><span>Basic</span></h6>
+          <span class="description">This template is perfect for sending a basic but nice looking email to your readers.</span>
+          <a href="/basic" class="button primary">View</a>
+        </li>
+        <li>
+          <a href="/hero"><img src="{{ "hero.jpg" | asset_url }}"></a>
+          <h6 class="name"><span>Hero</span></h6>
+          <span class="description">Want to include a snazzy hero image in your email? This template is for you!</span>
+          <a href="/hero" class="button primary">View</a>
+        </li>
+        <li>
+          <a href="/sidebar"><img src="{{ "sidebar.jpg" | asset_url }}"></a>
+          <h6 class="name"><span>Sidebar</span></h6>
+          <span class="description">This template includes a sidebar area for a list of links, perfect for linking to additional content.</span>
+          <a href="/sidebar" class="button primary">View</a>
+        </li>
+        <li>
+          <a href="/sidebar-hero"><img src="{{ "sidebar-hero.jpg" | asset_url }}"></a>
+          <h6 class="name"><span>Sidebar Hero</span></h6>
+          <span class="description">Want a sidebar and a hero image? Let's go crazy! This template combines the Sidebar and Hero templates.</span>
+          <a href="/sidebar-hero" class="button primary">View</a>
+        </li>
+        <li>
+          <a href="/newsletter"><img src="{{ "newsletter.jpg" | asset_url }}"></a>
+          <h6 class="name"><span>Newsletter</span></h6>
+          <span class="description">This template is perfect for a point-by-point newsletter. For good measure, we've thrown in a hero image, too.</span>
+          <a href="/newsletter" class="button primary">View</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="zurb-footer-bottom">
+  <div class="row">
+    <div class="large-4 push-8 columns"></div>
+    <div class="large-8 pull-4 columns">
+      <p class="copyright">&copy; 1998&ndash;2013 ZURB, Inc. All rights reserved.</p>
+    </div>          
+    </div>
+  </div>
+  {{ "scripts.js" | asset_url | script_tag }}
+</section>
+<section id="sidebar" role="complementary">            
+  <div class="main-menu">
+    <h6>Ink</h6>
+    <nav id="sideMenu" role="navigation">
+      <ul id="sideMainNav" class="nav-bar">
+        <li><a href="/">Home</a></li>
+        <li><a href="http://zurb.com/ink/process.php">Ink Process</a></li>
+        <li><a href="http://zurb.com/ink/docs.php">Ink Docs</a></li>
+        <li><a href="http://docs.mixture.io">Mixture Docs</a></li>
+      </ul>
+    </nav>      
+  </div> 
+</section>
+{% endblock %}
